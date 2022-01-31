@@ -1,0 +1,30 @@
+# Deliverable 1
+# Import dplyr library
+library(dplyr)
+# Read in MechaCar MPG CSV file
+mpg_df <- read.csv(file='MechaCar_mpg.csv', check.names=F, stringsAsFactors=F)
+# Generate summary of the linear model for the MechaCar MPG CSV
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = mpg_df))
+
+# Deliverable 2
+# Import the Suspension Coil CSV file
+coils <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors=F)
+head(coils)
+# Create a total summary of the coil column that includes: mean, med, var and sd
+total_summary <- coils %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep')
+# Create a lot summary dataframe grouped by the manufacturing lot and the previous summary items for PSI
+lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep')
+
+# Deliverable 3
+# Run a T-test across all manufacturing lots
+t.test(coils$PSI, mu=1500)
+# Creating subsets for each lot
+coils_lot1 <- subset(coils, Manufacturing_Lot=="Lot1")
+coils_lot2 <- subset(coils, Manufacturing_Lot=="Lot2")
+coils_lot3 <- subset(coils, Manufacturing_Lot=="Lot3")
+# Running a T-test for each lot's mean PSI vs. the population PSI at 1,500
+t.test(coils_lot1$PSI, mu=1500)
+t.test(coils_lot2$PSI, mu=1500)
+t.test(coils_lot3$PSI, mu=1500)
+
+
