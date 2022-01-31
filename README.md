@@ -5,9 +5,9 @@
 
 
 ## **Overview**:
+A company's new prototype the "MechaCar" is suffering from production issues and the manufacturing process has stalled. By comparing the datasets available in two CSV files, issues in the manufacturing process will be easier to identify and provide the team with details relating to what things need to be addressed. Using R Studio and a variety of statistical concepts for in-depth analysis, the manufacturing issues will likely stand out among the other statistical results from these analyses.
 
 ## **Summary of Results**:
-
 ### *Linear Regression to Predict MPG*:
 - ![mpg_linreg](mpg_linreg.png)
 The summary created from the linear regression function provided useful insight into which key factors influenced the car's resulting MPG rating. The main findings from creating this summary were:
@@ -34,11 +34,20 @@ Running a T-test for the product records of all manufacturing lots together and 
 - The second lot's values, however, show some slight variation but with a t-value of less than 1.0 and a p-value of more than 0.05, the variations are still not statistically significant.
 - The third lot's t-test shows a t-value of -2.1, which surpasses the overall t-value result and the lot's records have a p-value of 0.042, which makes it not only statistically significant but also allows for rejection of the null hypothesis. With the fact that this lot's statistical values making it stand out, the analysis shows how lot3's individual mean PSI values are enough to strongly impact the calculated results for all three lots' manufacturing records together.
 ### *Study Design: MechaCar vs Competition*:
+1. What metric or metrics are you going to test?
+  - To determine the MechaCar's performance against other models on the market, some key metrics will need to be noted and recorded for comparison. For consumers two major questions they will want answered with any vehicle purchase are: 
+    1. how is the car's highway fuel efficiency 
+    2. how much does the vehicle cost for initial purchase. 
+2. What is the null hypothesis or alternative hypothesis?
+  - The null hypothesis for these metrics will be along the lines of:
+    1. Fuel efficiency is the same when driving multiple 20 mile stretches at highway speeds and at local road speeds.
+    2. A car costs the same for similar dimensions and type across any brand on the market.
+3. What statistical test would you use to test the hypothesis? And why?
+  - As a result, the statistical tests for each metric would be:
+    1. For fuel efficiency, a simple linear regression test would show the comparison of speed and the fuel level left in the tank after completing each consistent stretch of distance.
+    2. Using a collection of total manufacturing and materials costs for the MechaCar model and models from competing companies of similar size and material composition, a handful of two-sample T-tests would be an ideal choice. These test would be conducted between the MechaCar's production cost and an average cost of a competing company's models. The two-sample T-test would allow for the direct comparison of a company's average model costs to the MechaCar's cost.
+4. What data is needed to run the statistical test?
+  - To test these hypotheses, the dependent and independent variables would need to be identified. For each metric, the dependent variables would be continuous with:
+    1. Speed for fuel efficiency continuously fixed (as much as possible) for 20-mile stretches to measure fuel consumption based on the speed of the vehicle. The data that would be needed would be how many gallons of fuel remain in the tank at each point of measurement.
+    2. The basic materials for the vehicle construction would be the same (such as steel for the chassis, polymers for the interal sections, basic synthetic materials for internal surfaces.) In addition to that, the vehicle type would need to be the same (such as sedans being compared to each other and SUVs being compared to SUVs.) Overall the most important data to be gathered would be the production costs of competing models before being adjusted to the retail price.
 
--
--
--
--
-
-
-## **Conclusions**:
