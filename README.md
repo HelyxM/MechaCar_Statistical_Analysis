@@ -1,6 +1,8 @@
 # MechaCar_Statistical_Analysis
 
-###
+### *Files*:
+- [MechaCarChallenge](MechaCarChallenge.RScript)
+
 
 ## **Overview**:
 
@@ -31,6 +33,12 @@ Running a T-test for the product records of all manufacturing lots together and 
 - The first lot's values have an ideal alignment with the population mean value, resulting in the t-value being 0 and the p-value being 1. 
 - The second lot's values, however, show some slight variation but with a t-value of less than 1.0 and a p-value of more than 0.05, the variations are still not statistically significant.
 - The third lot's t-test shows a t-value of -2.1, which surpasses the overall t-value result and the lot's records have a p-value of 0.042, which makes it not only statistically significant but also allows for rejection of the null hypothesis. With the fact that this lot's statistical values making it stand out, the analysis shows how lot3's individual mean PSI values are enough to strongly impact the calculated results for all three lots' manufacturing records together.
-### * *:
+### *Study Design: MechaCar vs Competition*:
+
+-
+-
+-
+-
+
 
 ## **Conclusions**:
