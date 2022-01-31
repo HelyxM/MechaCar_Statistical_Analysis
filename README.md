@@ -10,7 +10,7 @@ A company's new prototype the "MechaCar" is suffering from production issues and
 ## **Summary of Results**:
 ### *Linear Regression to Predict MPG*:
 - ![mpg_linreg](mpg_linreg.png)
-The summary created from the linear regression function provided useful insight into which key factors influenced the car's resulting MPG rating. The main findings from creating this summary were:
+- The summary created from the linear regression function provided useful insight into which key factors influenced the car's resulting MPG rating. The main findings from creating this summary were:
   - The vehicle's length (at a p-value of 2.6 * 10^-12) and the vehicle's ground clearance (at a p-value of 5.21 * 10^-8) were two variables that provided non-random amounts of variance to the MPG values based on this dataset.
   - The slope of the linear model is not considered to be zero because the returned p-value of 5.35 * 10^-11 is below the necessary p-value threshold of 0.05. This shows there is enough evidence to reject the null hypothesis, and to claim the linear model has a slope that can predict the data points with a sufficient degree of accuracy.
   - This linear model does predict the MPG rating of MechaCar prototypes effectively due to the R-squared value of 0.715, indicating a high correlation coefficient. With the R-squared value showing a greater closer value to 1.0 than 0.5, it predicts the MPG values with a much higher degree of accuracy than random chance. With this R-squared value combined with the p-value supporting a much greater probability of accuracy than random chance, this linear model can certainly be considered effective in predicting the MPG values. Despite these pieces of evidence, however, the p-values for the different variables shown in the summary indicate there are not many significant variables that can be identified as key factors in the model. This means the model can predict with some efficiency the known data values, but the accuracy of predicting future values that are not yet known is questionable and can't necessarily be considered reliable.
@@ -33,7 +33,7 @@ Running a T-test for the product records of all manufacturing lots together and 
 - The first lot's values have an ideal alignment with the population mean value, resulting in the t-value being 0 and the p-value being 1. 
 - The second lot's values, however, show some slight variation but with a t-value of less than 1.0 and a p-value of more than 0.05, the variations are still not statistically significant.
 - The third lot's t-test shows a t-value of -2.1, which surpasses the overall t-value result and the lot's records have a p-value of 0.042, which makes it not only statistically significant but also allows for rejection of the null hypothesis. With the fact that this lot's statistical values making it stand out, the analysis shows how lot3's individual mean PSI values are enough to strongly impact the calculated results for all three lots' manufacturing records together.
-- 
+
 ### *Study Design: MechaCar vs Competition*:
 For further analysis into the MechaCar, an important analysis would be one that compares the prototype to similar products offered by competitors on the market. The following study design would allow for comparing two key performance criteria relating to the MechaCar to competing vehicles. For performance analysis the following questions direct the study:
 1. What metric or metrics are you going to test?
