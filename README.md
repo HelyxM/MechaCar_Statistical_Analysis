@@ -33,7 +33,9 @@ Running a T-test for the product records of all manufacturing lots together and 
 - The first lot's values have an ideal alignment with the population mean value, resulting in the t-value being 0 and the p-value being 1. 
 - The second lot's values, however, show some slight variation but with a t-value of less than 1.0 and a p-value of more than 0.05, the variations are still not statistically significant.
 - The third lot's t-test shows a t-value of -2.1, which surpasses the overall t-value result and the lot's records have a p-value of 0.042, which makes it not only statistically significant but also allows for rejection of the null hypothesis. With the fact that this lot's statistical values making it stand out, the analysis shows how lot3's individual mean PSI values are enough to strongly impact the calculated results for all three lots' manufacturing records together.
+- 
 ### *Study Design: MechaCar vs Competition*:
+For further analysis into the MechaCar, an important analysis would be one that compares the prototype to similar products offered by competitors on the market. The following study design would allow for comparing two key performance criteria relating to the MechaCar to competing vehicles. For performance analysis the following questions direct the study:
 1. What metric or metrics are you going to test?
   - To determine the MechaCar's performance against other models on the market, some key metrics will need to be noted and recorded for comparison. For consumers two major questions they will want answered with any vehicle purchase are: 
     1. how is the car's highway fuel efficiency 
